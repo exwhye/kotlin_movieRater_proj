@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.elevenzon.toolbar.MainActivity">
+<item
+    android:id="@+id/addMovieMainMI"
+    android:title="Add"
+    app:showAsAction="always"/>
+    <item
+        android:id="@+id/night_mode"
+        android:title="@string/night_mode"/>
+</menu>

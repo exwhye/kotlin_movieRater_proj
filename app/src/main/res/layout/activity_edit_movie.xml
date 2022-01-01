@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleEditTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        />
+
+    <EditText
+        android:id="@+id/titleEditET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEditTV"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/descriptionEditTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEditET"
+        android:text="@string/description"
+        />
+
+    <EditText
+        android:id="@+id/descriptionEditET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditTV"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/languageEditTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditET"
+        android:text="@string/language"
+        />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/languageEditRbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languageEditTV">
+
+        <RadioButton
+            android:id="@+id/rbtnEnglish"
+            android:text="@string/radioBtnEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+        <RadioButton
+            android:text="@string/radioBtnChinese"
+            android:id="@+id/rbtnChinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="@string/radioBtnMalay"
+            android:id="@+id/rbtnMalay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="@string/radioBtnTamil"
+            android:id="@+id/rbtnTamil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/releaseDateEditTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languageEditRbtn"
+        android:text="@string/release_date"
+        />
+    <EditText
+        android:id="@+id/releaseDateEditET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/releaseDateEditTV"
+        android:text=""
+        />
+
+    <CheckBox
+        android:id="@+id/chkBoxAudience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/releaseDateEditET"
+        android:text="@string/not_suitable_for_all_audience"
+        android:checked="true"/>
+
+    <!--        android:visibility="gone"-->
+    <CheckBox
+        android:id="@+id/chkBoxViolence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_toRightOf="@id/chkBoxViolence"
+        android:layout_below="@id/chkBoxAudience"
+        android:text="@string/violence" />
+
+    <CheckBox
+        android:id="@+id/chkBoxLanguageUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkBoxAudience"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/chkBoxViolence"
+        android:text="@string/language_used" />
+
+
+</RelativeLayout>
